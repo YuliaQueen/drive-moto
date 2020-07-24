@@ -105,7 +105,7 @@ function images() {
 }
 
 function fonts() {
-    return src(path.src.fonts)
+        src(path.src.fonts)
         .pipe(dest(path.build.fonts));
 }
 

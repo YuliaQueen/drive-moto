@@ -16,3 +16,4 @@ testWebP(function (support) {
     }
 });
 
+@@include('jquery.3.5.1.js');

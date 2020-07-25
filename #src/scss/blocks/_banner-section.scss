@@ -1,0 +1,149 @@
+.banner-section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-section__slider {
+  max-width: 870px;
+}
+
+.banner-section__slider-item {
+  img {
+    object-fit: cover;
+    min-height: 400px;
+  }
+}
+
+.banner-section__slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.banner-section__slider-btnprev {
+  z-index: 5;
+  left: 20px;
+}
+
+.banner-section__slider-btnnext {
+  z-index: 5;
+  right: 20px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  button {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+}
+
+.slick-active button {
+  background-color: #ffffff;
+}
+
+.sale-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 265px;
+  text-align: center;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+}
+
+.sale-item__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sale-item__info {
+  color: #ffffff;
+  background-color: #1C62CD;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.price {
+  font-family: 'Barlow', sans-serif;
+  text-align: right;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.sale-item__price-new {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  color: #1C62CD;
+}
+
+.sale-item__price-old {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 40px;
+    right: -7px;
+    bottom: 7px;
+    border: 0.5px solid #C4C4C4;
+    transform: rotate(-12deg);
+  }
+}
+
+.sale-item__img {
+  object-fit: contain;
+}
+
+.sile-item__title {
+  max-width: 215px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.sale-item__footer {
+  background-color: #F0F0F4;
+  padding: 25px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  span {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #1C62CD;
+  }
+}

@@ -11,9 +11,19 @@ testWebP(function (support) {
 
     if (support == true) {
         document.querySelector('body').classList.add('webp');
-    }else{
+    } else {
         document.querySelector('body').classList.add('no-webp');
     }
 });
 
-@@include('jquery.3.5.1.js');
+$(document).ready(function () {
+    $('.banner-section__slider').slick({
+        dots: true,
+        prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="./img/arrow-left.svg" alt=""></button>',
+        nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="./img/arrow-right.svg" alt=""></button>',
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+});

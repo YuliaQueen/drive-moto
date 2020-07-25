@@ -101,7 +101,7 @@
 
     &:hover {
       font-family: 'SFProDisplay-Semibold', sans-serif;
-      color: #111111;
+      text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333;
     }
 
     &:hover::before {

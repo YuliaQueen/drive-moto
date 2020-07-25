@@ -67,6 +67,7 @@ figure {
 
 a {
   color: inherit;
+  display: inline-block;
 }
 
 a,
@@ -115,10 +116,18 @@ input {
   border: none;
 }
 
+.page-section {
+  margin-bottom: 80px;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 80px;
 }
 
 .header__top-inner {
@@ -208,10 +217,6 @@ input {
   border-radius: 50%;
   left: 26px;
   top: 11px;
-}
-
-.header__bottom {
-  margin-bottom: 76px;
 }
 
 .menu-categories {
@@ -370,7 +375,7 @@ input {
 }
 
 .price {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   text-align: right;
   margin-right: 5px;
   margin-top: 5px;
@@ -425,10 +430,82 @@ input {
 }
 
 .sale-item__footer span {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   color: #1C62CD;
+}
+
+.search__tabs {
+  margin-bottom: 25px;
+}
+
+.search__tabs-item {
+  padding: 11px 26px 12px;
+}
+
+.search__tabs-item--active {
+  background-color: #F0F0F4;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.search__content-item {
+  display: none;
+}
+
+.search__content-item--active {
+  display: block;
+}
+
+.search__content-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search__content-input {
+  width: 100%;
+  background-color: #F0F0F4;
+  border-radius: 3px;
+  padding: 5px 20px;
+  font-family: SFProDisplay-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.search__content-input::-webkit-input-placeholder {
+  color: #656464;
+}
+
+.search__content-input::-moz-placeholder {
+  color: #656464;
+}
+
+.search__content-input:-ms-input-placeholder {
+  color: #656464;
+}
+
+.search__content-input::-ms-input-placeholder {
+  color: #656464;
+}
+
+.search__content-input::placeholder {
+  color: #656464;
+}
+
+.search__content-btn {
+  padding: 17px 41px;
+  margin-left: -3px;
+  background-color: #1C62CD;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: SFProDisplay-Regular, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }

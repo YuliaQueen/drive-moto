@@ -14,12 +14,6 @@
   }
 }
 
-.banner-section__slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-}
 
 .banner-section__slider-btnprev {
   z-index: 5;
@@ -30,6 +24,7 @@
   z-index: 5;
   right: 20px;
 }
+
 
 .slick-dots {
   position: absolute;
@@ -68,6 +63,11 @@
   text-align: center;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, .25);
+  }
 }
 
 .sale-item__top {

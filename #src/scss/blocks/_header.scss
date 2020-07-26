@@ -17,6 +17,14 @@
   & + & {
     margin-left: 50px;
   }
+
+  a {
+    transition: color .3s;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
 }
 
 .header__box {
@@ -74,6 +82,7 @@
   left: 26px;
   top: 11px;
 }
+
 
 .menu-categories {
   display: flex;

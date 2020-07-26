@@ -90,3 +90,21 @@ input {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+//переключение табов
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.tabs-content--active {
+  display: block;
+}
+
+
+.banner-section__slider-btn,
+.banner-section__slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}

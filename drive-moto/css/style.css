@@ -692,6 +692,7 @@ input {
 
 .product-item {
   min-height: 400px;
+  min-width: 270px;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
   text-align: center;
@@ -777,6 +778,10 @@ input {
 .product-item:hover .product-item__text {
   opacity: 1;
   color: #2F3035;
+}
+
+.product-item__img {
+  margin: 0 auto;
 }
 
 .product-item__price {

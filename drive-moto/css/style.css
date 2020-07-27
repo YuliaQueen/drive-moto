@@ -828,3 +828,116 @@ input {
 .long-banner {
   margin-bottom: 72px;
 }
+
+.footer {
+  background-color: #F0F0F4;
+  padding-top: 42px;
+  padding-bottom: 27px;
+}
+
+.footer__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__top-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer-list__item {
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 15px;
+}
+
+.footer__top-item:first-child {
+  max-width: 295px;
+}
+
+.footer__top-item:first-child .footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 33px;
+}
+
+.footer__top-item:first-child .footer-form .footer-form__input {
+  padding: 8px 12px;
+  width: 100%;
+  font-family: SFProDisplay-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__top-item:first-child .footer-form .footer-form__input::-webkit-input-placeholder {
+  color: #C4C4C4;
+}
+
+.footer__top-item:first-child .footer-form .footer-form__input::-moz-placeholder {
+  color: #C4C4C4;
+}
+
+.footer__top-item:first-child .footer-form .footer-form__input:-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.footer__top-item:first-child .footer-form .footer-form__input::-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.footer__top-item:first-child .footer-form .footer-form__input::placeholder {
+  color: #C4C4C4;
+}
+
+.footer__top-item:first-child .footer-form button {
+  padding: 8px 16px;
+  background-color: #1C62CD;
+  font-family: SFProDisplay-Regular, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__top-item:last-child {
+  margin-right: 100px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.social-list__item + .social-list__item {
+  margin-left: 30px;
+}
+
+.footer__bottom {
+  padding-top: 46px;
+  text-align: center;
+}
+
+.footer__bottom-link {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.footer__bottom-link + .footer__bottom-link {
+  margin-left: 81px;
+}

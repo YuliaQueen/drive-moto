@@ -1246,6 +1246,31 @@ input {
   color: #C4C4C4;
 }
 
+.tabs-content-2 .jq-selectbox {
+  width: 100%;
+}
+
+.tabs-content-2 .jq-selectbox .jq-selectbox__select {
+  height: 32px;
+  padding: 0 45px 0 10px;
+  border: 1px solid #CCC;
+  border-bottom-color: #B3B3B3;
+  border-radius: 0;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font: 14px/32px Arial, sans-serif;
+  color: #333;
+  text-shadow: none;
+}
+
+.tabs-content-2 .aside-filter__item-content-box {
+  width: 48%;
+  text-align: center;
+  font-size: 12px;
+  padding: 2px 15px;
+}
+
 .catalog__inner-list {
   display: -webkit-box;
   display: -ms-flexbox;

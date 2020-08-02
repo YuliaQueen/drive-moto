@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
-	<title>Drive Moto</title>
+	<title>Гидроциклы</title>
 </head>
 <body>
 <header class="header">
@@ -25,7 +25,7 @@
 						<li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
 					</ul>
 				</nav>
-				<a class="logo" href="#">
+				<a class="logo" href="/">
 					<img class="logo__img" src="../../img/logo.svg" alt="logo">
 				</a>
 				<div class="header__box">
@@ -68,7 +68,7 @@
 					</a>
 				</li>
 				<li class="menu-categories__item">
-					<a class="menu-categories__link" href="#">
+					<a class="menu-categories__link" href="./catalog.html" target="_blank">
 						Гидроциклы
 					</a>
 				</li>
@@ -400,7 +400,114 @@
 					</ul>
 				</form>
 			</div>
-			<div class="tabs-content aside-filter__tabs-content" id="aside-tab-2">2 tab</div>
+			<div class="tabs-content aside-filter__tabs-content tabs-content-2" id="aside-tab-2">
+				<form action="/" class="aside-filter__form">
+					<ul class="aside-filter__list">
+						<li class="aside-filter__item-drop">
+							<p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Наличие</p>
+							<div class="aside-filter__item-content">
+								<div class="aside-filter__item-content-box">
+									<label class="aside-filter__item-content-label">
+										<input class="filter-style" type="checkbox">
+										В наличии
+									</label>
+								</div>
+								
+								<div class="aside-filter__item-content-box">
+									<label class="aside-filter__item-content-label">
+										<input class="filter-style" type="checkbox">
+										Под заказ
+									</label>
+								</div>
+							</div>
+						</li>
+						
+						<li class="aside-filter__item-drop">
+							<p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Марка</p>
+							<div class="aside-filter__item-content">
+								<select class="filter-style" name="" id="">
+									<option value="">BRP</option>
+									<option value="">Spark 2</option>
+									<option value="">Spark 3</option>
+								</select>
+							</div>
+						</li>
+						
+						<li class="aside-filter__item-drop">
+							<p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Модель</p>
+							<div class="aside-filter__item-content">
+								<select class="filter-style" name="" id="">
+									<option value="">SeaDoo GTI </option>
+									<option value="">SeaDoo GTI 2</option>
+									<option value="">SeaDoo GTI 3</option>
+								</select>
+							</div>
+						</li>
+						
+						<li class="aside-filter__item-drop">
+							<p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Мощность двигателя</p>
+							<div class="aside-filter__item-content">
+								<select class="filter-style" name="" id="">
+									<option value="">130 hp</option>
+									<option value="">140 hp</option>
+									<option value="">150 hp</option>
+								</select>
+							</div>
+						</li>
+						
+						<li class="aside-filter__item-drop">
+							<p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Модификация</p>
+							<div class="aside-filter__item-content">
+								<select class="filter-style" name="" id="">
+									<option value="">SE</option>
+									<option value="">BE</option>
+									<option value="">QR</option>
+								</select>
+							</div>
+						</li>
+						
+						<li class="aside-filter__item-drop action-list">
+							<p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Цвет</p>
+							<div class="aside-filter__item-content">
+								<div class="aside-filter__item-content-box">
+									<label class="aside-filter__item-content-label">
+										<input class="filter-style" type="radio" name="action">
+										Black\Mango
+									</label>
+								</div>
+								
+								<div class="aside-filter__item-content-box">
+									<label class="aside-filter__item-content-label">
+										<input class="filter-style" type="radio" name="action">
+										Blue Metallic
+									</label>
+								</div>
+								
+								<div class="aside-filter__item-content-box">
+									<label class="aside-filter__item-content-label">
+										<input class="filter-style" type="radio" name="action">
+										California green
+									</label>
+								</div>
+								
+								<div class="aside-filter__item-content-box">
+									<label class="aside-filter__item-content-label">
+										<input class="filter-style" type="radio" name="action">
+										Liquid Metal
+									</label>
+								</div>
+							</div>
+						</li>
+						
+						<li class="aside-filter__item-btn">
+							<button class="filter-btn__send" type="submit">ВЫБРАТЬ</button>
+							<p class="filter__extra">Дополнительные параметры</p>
+							<div class="filter__extra-content">Еще фильтры</div>
+							<button class="filter-btn__reset" type="submit">Сбросить фильтр</button>
+						</li>
+					</ul>
+				</form>
+			</div>
 		</div>
 	</div>
 </aside>

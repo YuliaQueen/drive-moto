@@ -48,8 +48,47 @@ $(document).ready(function () {
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
     });
+
     //сердечки
     $('.product-item-favorite').on('click', function () {
         $(this).toggleClass('product-item-favorite--active')
     });
+
+    //переключение баттонов режима отображения каталога
+    $('.catalog__filter-button').on('click', function () {
+        $(this).addClass('catalog__filter-button--active');
+        $(this).siblings().removeClass('catalog__filter-button--active');
+    });
+
+    $('.catalog__filter-btnline').on('click', function() {
+        $('.product-item__wrapper').addClass('product-item__wrapper--list')
+    })
+
+    $('.catalog__filter-btngrid').on('click', function() {
+        $('.product-item__wrapper').removeClass('product-item__wrapper--list')
+    })
+
+
+    //подключение jq-form-styler
+    $('.filter-style').styler();
+
+
+    //клик на тайтл в фильтре
+    $('.filter__item-drop, .filter__extra').on('click', function () {
+        $(this).toggleClass('filter__item-drop--active');
+        $(this).next().slideToggle('200');
+    })
+
+    //переключение радио-баттонов в фильтре акций
+    $('.action-list .aside-filter__item-content-box').on('click', function () {
+        $(this).css('background-color', '#1C62CD');
+        $(this).css('color', 'white');
+        $(this).siblings().css('background-color', '#F0F0F4');
+        $(this).siblings().css('color', '#C4C4C4');
+
+    })
+
+    //подключение ionRangeSlider
+    $(".js-range-slider").ionRangeSlider();
+
 });

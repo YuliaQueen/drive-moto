@@ -2,9 +2,14 @@
 @import "variables";
 @import "base";
 @import "blocks/header";
+@import "blocks/breadcrumbs";
 @import "blocks/banner-section";
 @import "blocks/search-section";
 @import "blocks/categories-section";
 @import "blocks/products-section";
 @import "blocks/long-banner";
+@import "blocks/catalog/catalog";
+@import "blocks/catalog/catalog-aside";
+@import "blocks/catalog/catalog-list";
+@import "blocks/catalog/catalog-filter";
 @import "blocks/footer";

@@ -1,0 +1,23 @@
+.breadcrumbs {
+  transform: translateY(-40px);
+}
+
+.breadcrumbs__list-item {
+  display: inline-block;
+  padding-right: 18px;
+  margin-right: 6px;
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  color: #C4C4C4;
+
+  &:not(:last-child):before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    background-image: url("../../img/back-arrow.svg");
+    width: 6px;
+    height: 9px;
+  }
+}

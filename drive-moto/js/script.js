@@ -91,4 +91,15 @@ $(document).ready(function () {
     //подключение ionRangeSlider
     $(".js-range-slider").ionRangeSlider();
 
+    $(function () {
+
+        $("#rateYo").rateYo({
+            ratedFill: '#1C62CD',
+            maxValue: 5,
+            numStars: 5,
+            spacing: "7px"
+        });
+
+    });
+
 });

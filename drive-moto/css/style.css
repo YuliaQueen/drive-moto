@@ -1575,6 +1575,10 @@ input {
   margin-top: 45px;
 }
 
+.product-menu__tabs {
+  padding-bottom: 80px;
+}
+
 .product-menu {
   display: -webkit-box;
   display: -ms-flexbox;

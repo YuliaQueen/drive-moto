@@ -1,9 +1,22 @@
 .search__tabs {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 25px;
+    text-align: left;
+  }
 }
 
 .search__tabs-item {
+  width: 100%;
   padding: 11px 26px 12px;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+
+
 }
 
 .search__tabs-item.tab--active {
@@ -14,13 +27,14 @@
 
 .search__content-form {
   display: flex;
+  position: relative;
 }
 
 .search__content-input {
   width: 100%;
   background-color: #F0F0F4;
   border-radius: 3px;
-  padding: 5px 20px;
+  padding: 15px 20px;
   font-family: $primary-font-family;
   font-size: 16px;
   line-height: 19px;
@@ -28,18 +42,44 @@
   &::placeholder {
     color: #656464;
   }
+
+  @media (min-width: 768px) {
+    padding: 5px 20px;
+  }
 }
 
 .search__content-btn {
-  padding: 17px 41px;
-  margin-left: -3px;
-  background-color: $accent-color;
-  border-radius: 3px;
-  color: #ffffff;
-  font-family: $primary-font-family;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    padding: 17px 41px;
+    margin-left: -3px;
+    background-color: $accent-color;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+}
+
+.search__content-btn-mobile {
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }

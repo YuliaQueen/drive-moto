@@ -549,10 +549,12 @@ input {
 }
 
 .search__tabs {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .search__tabs-item {
+  width: 100%;
   padding: 11px 26px 12px;
 }
 
@@ -566,13 +568,14 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .search__content-input {
   width: 100%;
   background-color: #F0F0F4;
   border-radius: 3px;
-  padding: 5px 20px;
+  padding: 15px 20px;
   font-family: SFProDisplay-Regular, sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -599,17 +602,22 @@ input {
 }
 
 .search__content-btn {
-  padding: 17px 41px;
-  margin-left: -3px;
-  background-color: #1C62CD;
-  border-radius: 3px;
-  color: #ffffff;
-  font-family: SFProDisplay-Regular, sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  display: none;
+}
+
+.search__content-btn-mobile {
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .categories__inner {
@@ -1889,6 +1897,38 @@ input {
   .sale-item {
     max-width: 30%;
     height: 400px;
+  }
+
+  .search__tabs {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .search__tabs-item {
+    width: auto;
+  }
+
+  .search__content-input {
+    padding: 5px 20px;
+  }
+
+  .search__content-btn {
+    display: block;
+    padding: 17px 41px;
+    margin-left: -3px;
+    background-color: #1C62CD;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: SFProDisplay-Regular, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .search__content-btn-mobile {
+    display: none;
   }
 
   .categories__inner {

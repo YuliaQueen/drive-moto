@@ -33,7 +33,6 @@ $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
             loop: true,
             items: 4,
-            autoplay: true,
             autoWidth: true,
             margin: 5,
             responsive: {

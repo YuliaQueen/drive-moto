@@ -81,6 +81,10 @@ input {
   border: none;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .page-section {
   margin-bottom: 80px;
 }
@@ -90,6 +94,26 @@ input {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+//overlay
+.overlay_menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
+
+.overlay_menu.active {
+  display: block;
+}
+
 
 //hamburger-menu
 .hamburger-menu {
@@ -101,6 +125,7 @@ input {
   width: 2.5rem;
   max-width: 40px;
   cursor: pointer;
+  z-index: 11;
 
   @media (min-width: 1200px) {
     display: none;
@@ -116,16 +141,75 @@ input {
   transition: all 0.5s;
 }
 
-.hamburger-menu:hover .top {
+.hamburger-menu.active .top {
   transform: rotate(45deg);
 }
 
-.hamburger-menu:hover .middle {
+.hamburger-menu.active .middle {
   opacity: 0;
 }
 
-.hamburger-menu:hover .bottom {
+.hamburger-menu.active .bottom {
   transform: rotate(-45deg);
+}
+
+//mobile-menu
+.mobile__menu {
+  position: absolute;
+  padding: 25px 50px 30px 70px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  transition: all .4s ease-in-out;
+  transform: translateX(-100%);
+
+  @media (min-width: 768px) {
+    height: 60vh;
+    transform: translateY(-100%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+
+  .mobile__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+    a {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 22px;
+      border-bottom: 1px solid $primary-font-color;
+
+      @media (min-width: 560px) {
+        flex-basis: 50%;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (min-width: 560px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.mobile__menu.active {
+  transform: translateX(0);
 }
 
 //переключение табов

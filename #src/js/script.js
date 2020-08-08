@@ -119,4 +119,24 @@ $(document).ready(function () {
 
     });
 
+    //hamburger-button and mobile-menu
+    const menu = document.querySelector('.mobile__menu');
+    const body = document.querySelector('body');
+    const overlay = document.querySelector('.overlay_menu');
+    const button = document.querySelector('.hamburger-menu');
+
+    $('.hamburger-menu').on('click', function () {
+        $(this).toggleClass('active');
+        menu.classList.toggle('active');
+        body.classList.toggle('noscroll');
+        overlay.classList.toggle('active');
+    });
+
+    window.addEventListener('resize', function () {
+        menu.classList.remove('active');
+        button.classList.remove('active');
+        body.classList.remove('noscroll');
+        overlay.classList.remove('active');
+    });
+
 });

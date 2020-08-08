@@ -57,7 +57,7 @@ body {
   font-family: SFProDisplay-Regular, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: #2F3035;
+  color: #2f3035;
 }
 
 figure {
@@ -116,6 +116,10 @@ input {
   border: none;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .page-section {
   margin-bottom: 80px;
 }
@@ -124,6 +128,24 @@ input {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.overlay_menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
+
+.overlay_menu.active {
+  display: block;
 }
 
 .hamburger-menu {
@@ -143,6 +165,7 @@ input {
   width: 2.5rem;
   max-width: 40px;
   cursor: pointer;
+  z-index: 11;
 }
 
 .hamburger-menu .bar {
@@ -158,20 +181,70 @@ input {
   transition: all 0.5s;
 }
 
-.hamburger-menu:hover .top {
+.hamburger-menu.active .top {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.hamburger-menu:hover .middle {
+.hamburger-menu.active .middle {
   opacity: 0;
 }
 
-.hamburger-menu:hover .bottom {
+.hamburger-menu.active .bottom {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.mobile__menu {
+  position: absolute;
+  padding: 25px 50px 30px 70px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.mobile__menu .mobile__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.mobile__menu .mobile__nav a {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 22px;
+  border-bottom: 1px solid #2f3035;
+}
+
+.mobile__menu .mobile__nav a:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.mobile__menu.active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .tabs-content {
@@ -765,7 +838,7 @@ input {
 }
 
 .product-item:hover .product-item__notify-text {
-  color: #2F3035;
+  color: #2f3035;
 }
 
 .product-item__wrapper.product-item__not-available .product-item__notify-text {
@@ -883,7 +956,7 @@ input {
 
 .product-item:hover .product-item__text {
   opacity: 1;
-  color: #2F3035;
+  color: #2f3035;
 }
 
 .product-item__img {
@@ -964,7 +1037,7 @@ input {
 }
 
 .aside-filter__tab.tab--active {
-  color: #2F3035;
+  color: #2f3035;
   padding-bottom: 7px;
   border-bottom: 2px solid #1C62CD;
   font-weight: 700;
@@ -1876,7 +1949,35 @@ input {
   line-height: 12px;
 }
 
+@media (min-width: 560px) {
+  .mobile__menu .mobile__nav a {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+
+  .mobile__menu .mobile__nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 @media (min-width: 768px) {
+  .mobile__menu {
+    height: 60vh;
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
   .banner-section__inner {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1975,6 +2076,10 @@ input {
 
 @media (min-width: 1200px) {
   .hamburger-menu {
+    display: none;
+  }
+
+  .mobile__menu {
     display: none;
   }
 

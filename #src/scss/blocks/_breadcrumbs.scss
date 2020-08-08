@@ -1,5 +1,10 @@
 .breadcrumbs {
   transform: translateY(-40px);
+  margin-top: 40px;
+
+  @media (min-width: 1200px) {
+    margin-top: auto;
+  }
 }
 
 .breadcrumbs__list-item {

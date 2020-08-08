@@ -1,7 +1,25 @@
 .catalog__filter {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.catalog__filter-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    display: block;
+    margin-bottom: auto;
+  }
 }
 
 .catalog__filter-items button {
@@ -13,11 +31,22 @@
   opacity: 0.7;
   background-color: #F0F0F4;
   border-radius: 3px;
+  flex-basis: 100%;
+  margin-bottom: 5px;
+
+  @media (min-width: 768px) {
+    margin-bottom: auto;
+  }
 }
 
 .catalog__filter-btn {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .catalog__filter-btn .jq-selectbox__select {
@@ -33,16 +62,26 @@
 }
 
 .catalog__filter-items button + button {
-  margin-left: 10px;
+
+  @media (min-width: 768px) {
+    margin-left: 10px;
+  }
 }
 
 .catalog__filter-btn button {
   background-color: transparent;
 }
 
+.buttons-item {
+  max-width: 100px;
+}
+
 
 .catalog__filter-btn button + button {
-  margin-left: 10px;
+
+  @media (min-width: 768px) {
+    margin-left: 10px;
+  }
 }
 
 .catalog__filter-btngrid {

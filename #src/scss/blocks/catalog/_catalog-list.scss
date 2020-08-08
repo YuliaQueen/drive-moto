@@ -1,7 +1,11 @@
 .catalog__inner-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .catalog__inner-list .product-item__wrapper {

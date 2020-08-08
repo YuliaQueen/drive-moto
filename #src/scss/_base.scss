@@ -156,7 +156,7 @@ input {
 //mobile-menu
 .mobile__menu {
   position: absolute;
-  padding: 25px 50px 30px 70px;
+  padding: 25px 50px 30px 90px;
   top: 0;
   right: 0;
   left: 0;
@@ -186,6 +186,7 @@ input {
     margin-bottom: 40px;
 
     a {
+      position: relative;
       font-size: 1rem;
       font-weight: 700;
       line-height: 22px;
@@ -197,6 +198,42 @@ input {
 
       &:not(:last-child) {
         margin-bottom: 15px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: -35px;
+        transform: translateY(-50%);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &.enter:before {
+        background-image: url("/../../img/user-icon.svg");
+      }
+
+      &.heart:before {
+        background-image: url("/../../img/heart-icon.svg");
+      }
+
+      &.basket-mobile:before {
+        background-image: url("/../../img/basket.svg");
+      }
+
+      &.shop:before {
+        background-image: url("/../../img/shop.svg");
+      }
+
+      &.actions:before {
+        background-image: url("/../../img/actions.svg");
+      }
+
+      &.delivery:before {
+        background-image: url("/../../img/delivery.svg");
       }
     }
 

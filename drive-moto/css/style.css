@@ -199,7 +199,7 @@ input {
 
 .mobile__menu {
   position: absolute;
-  padding: 25px 50px 30px 70px;
+  padding: 25px 50px 30px 90px;
   top: 0;
   right: 0;
   left: 0;
@@ -231,6 +231,7 @@ input {
 }
 
 .mobile__menu .mobile__nav a {
+  position: relative;
   font-size: 1rem;
   font-weight: 700;
   line-height: 22px;
@@ -239,6 +240,44 @@ input {
 
 .mobile__menu .mobile__nav a:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.mobile__menu .mobile__nav a:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: -35px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mobile__menu .mobile__nav a.enter:before {
+  background-image: url("/../../img/user-icon.svg");
+}
+
+.mobile__menu .mobile__nav a.heart:before {
+  background-image: url("/../../img/heart-icon.svg");
+}
+
+.mobile__menu .mobile__nav a.basket-mobile:before {
+  background-image: url("/../../img/basket.svg");
+}
+
+.mobile__menu .mobile__nav a.shop:before {
+  background-image: url("/../../img/shop.svg");
+}
+
+.mobile__menu .mobile__nav a.actions:before {
+  background-image: url("/../../img/actions.svg");
+}
+
+.mobile__menu .mobile__nav a.delivery:before {
+  background-image: url("/../../img/delivery.svg");
 }
 
 .mobile__menu.active {

@@ -1,5 +1,8 @@
 .product-menu__tabs {
-  padding-bottom: 80px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 80px;
+  }
 }
 
 .product__tabs.product-menu {

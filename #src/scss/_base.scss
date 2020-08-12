@@ -169,7 +169,7 @@ input {
   transform: translateX(-100%);
 
   @media (min-width: 768px) {
-    height: 60vh;
+    height: 70vh;
     transform: translateY(-100%);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -183,7 +183,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
     a {
       position: relative;

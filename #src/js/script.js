@@ -139,4 +139,11 @@ $(document).ready(function () {
         overlay.classList.remove('active');
     });
 
+    //footer accordion
+    $('.footer__top-title').on('click', function () {
+            $('.footer__top-item').removeClass('footer__top-item--active');
+            $(this).parent().addClass('footer__top-item--active');
+        }
+    )
+
 });

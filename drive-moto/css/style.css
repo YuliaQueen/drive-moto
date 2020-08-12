@@ -2041,7 +2041,6 @@ input {
 
 @media (min-width: 768px) {
   .mobile__menu {
-    height: 70vh;
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
             transform: translateY(-100%);

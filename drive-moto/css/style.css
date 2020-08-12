@@ -750,7 +750,7 @@ input {
 .categories__item {
   position: relative;
   min-width: 290px;
-  max-width: 370px;
+  max-width: 290px;
   min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -28,7 +28,8 @@
   margin-top: 15px;
 }
 
-.footer__top-item:not(:last-child) {
+.footer__top-item:nth-child(2),
+.footer__top-item:nth-child(3) {
   display: none;
 
   @media (min-width: 1200px) {
@@ -38,6 +39,12 @@
 
 .footer__top-item:first-child {
   max-width: 295px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    margin-bottom: auto;
+  }
 
   .footer-form {
     display: flex;

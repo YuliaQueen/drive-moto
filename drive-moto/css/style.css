@@ -1928,12 +1928,15 @@ input {
   margin-top: 15px;
 }
 
-.footer__top-item:not(:last-child) {
+.footer__top-item:nth-child(2),
+.footer__top-item:nth-child(3) {
   display: none;
 }
 
 .footer__top-item:first-child {
   max-width: 295px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .footer__top-item:first-child .footer-form {
@@ -2436,8 +2439,13 @@ input {
             justify-content: space-between;
   }
 
-  .footer__top-item:not(:last-child) {
+  .footer__top-item:nth-child(2),
+  .footer__top-item:nth-child(3) {
     display: block;
+  }
+
+  .footer__top-item:first-child {
+    margin-bottom: auto;
   }
 
   .footer__top-item:last-child {
